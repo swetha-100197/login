@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- jQuery library -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+  html{
+ height: 100vh
+}
+
+body{
+     width: 100%; height: 100%;
+      min-width: 100%; min-height: 100%;
+      overflow-y:hidden;
+
+    }
+
+  .login-container{
+    
+    height:100%;
+}
+.login-form-1{
+    padding: 5%;
+    
+}
+.login-form-1 h3{
+    text-align: center;
+    color: #333;
+}
+.login-form-2{
+   
+  box-shadow: -8px 0px 10px 0px #e8e1e1;
+}
+.login-form-2 h3{
+    text-align: center;
+    color: #fff;
+}
+.login-container form{
+    padding: 10%;
+}
+.images{
+  width: 20%;
+}
+.images1{
+width:42%;
+}
+
+
+
+
+.paragraph{
+  
+  font-size: 25px;
+}
+.field-icon {
+  float: right;
+  margin-left: -25px;
+  margin-top: -25px;
+  position: relative;
+  z-index: 2;
+}
+.dashed {
+    border-bottom: 1px dashed #b7b3b3;
+    text-align: center;
+    height: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.dashed span {
+    background: #fff;
+    padding: 0 5px;
+}
+label.error {
+  font-weight: normal;
+    color: red;
+} @media (min-width: 320px) and (max-width:526px) { 
+  body {
+ 
+ overflow-y: scroll;
+  
+}
+.paragraph{
+  
+  font-size: 18px;
+  margin-top:15px;
+}
+}
+  
+
+ @media (min-width: 526px) and (max-width:788px){ 
+  body {
+ 
+ overflow-y: scroll;
+  
+}
+  
+.paragraph{
+  
+  font-size: 18px;
+  margin-top:15px;
+}
+.picture{
+
+}
+img.images{
+  width:30%;
+}
+img.images1{
+
+width:53%;
+
+
+}
+}
+
+</style>
+
+</head>
+<body>
+  <div class="container login-container">
+            <div class="row">
+                <div class="col-md-6 login-form-1">
+                  <div class="picture" style="margin-top: -56px;margin-left: -127px;">
+                   <img class="images" src="C:\Users\wifinlenovo\Desktop\login\picture1.png" >
+               </div>
+               <div >
+                   <img src="C:\Users\wifinlenovo\Desktop\login\Group 5076@2x.png" style="width: 49%;" >
+               </div>
+                 <div style="margin-top: -155px;margin-left: -127px;">
+                   <img src="C:\Users\wifinlenovo\Desktop\login\picture3.png" style="width: 14%;" >
+               </div>
+               <p class="paragraph"><b style="color:rgb(32,178,170)">Your data</b> will be securely stored </p>
+               <p class="paragraph">In our cloud and will be accessed </P>
+                <p class="paragraph">only by you</p>
+                  <i class="fa fa-angle-right" style="font-size:24px;float:right;"></i>
+                <i class="fa fa-angle-left" style="font-size:24px;float:right;margin-right: 20px;"></i>
+                <div class="picture" style="margin-left: -127px;">
+                   <img class="images1" src="C:\Users\wifinlenovo\Desktop\login\picture2.png" >
+               </div>
+
+                    
+                </div>
+                <div class="col-md-6 login-form-2">
+                    <h3 style="color:black;margin-top: 90px;">My<b style="color:rgb(32,178,170)">Company</b></h3>
+                    <form id="form">
+                        <div class="form-group">
+                          <label for="name">Email</label>
+                            <input type="text" class="form-control" name="email" id="email" value="" autocomplete="off" />
+                        </div>
+                        <div class="form-group">
+                          <label for="name">Password</label>
+                            <input  name="firstname" type="password" id="firstname" class="form-control"  value="" />
+                            <span toggle="#firstname" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                        </div>
+                            <div class="form-group" style="margin-top:10px">
+                          <p style="margin-top: 24px;">By signing up for course prep,you agree to our <a href="#">Terms of use</a> and <a href="#">privacy policy</a>
+                        </div>
+                         <div class="col-lg-12 login-btm login-button" style="text-align: center">
+                                    <button type="submit" class="btn btn-outline-primary"  id="submit" disabled="true" style="width: 39%;background-color: rgb(32,178,170); color: white;margin-top:15px;">Sign Up</button>
+                                </div>
+
+                                <div class="dashed">
+                                <span>Or</span>
+                                    </div>
+                                    <div>
+                                      <p style="text-align: center;margin-top:23px;">Sign Up With</p>
+                                    </div>
+                                    <div style="text-align: center;">
+                                      <img src="C:\Users\wifinlenovo\Desktop\login\Group 5108@2x.png" style="width: 13%;"/>
+                                      <img src="C:\Users\wifinlenovo\Desktop\login\Group 5107@2x.png" style="width: 13%;"/>
+                                    </div>
+                                    <div>
+                                      <p style="text-align: center;margin-top:23px;">Already have an account?<a href="#" style="color: rgb(32,178,170); ">Login</a></p>
+                                    </div>
+
+                       
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script>
+          $(".toggle-password").click(function() {
+
+  $(this).toggleClass("fa-eye fa-eye-slash");
+  var input = $($(this).attr("toggle"));
+  if (input.attr("type") == "password") {
+    input.attr("type", "text");
+  } else {
+    input.attr("type", "password");
+  }
+});
+
+
+        </script>
+        <script>
+          $().ready(function() {
+
+ $("#form").validate({
+  ignore: ".ignore",
+  rules: {
+    "firstname": {
+      required: true,
+      minlength: 3
+    },
+    "email": {
+      required: true,
+      email: true
+    },
+    
+    "hiddenRecaptcha": {
+      required: function() {
+        if(grecaptcha.getResponse() == '') {
+          return true;
+                
+        } else {
+          return false;
+        }
+      }
+    }
+  },
+  messages: {
+    "firstname": {
+      required: "<br/>Please enter the password",
+      minlength: "<br/> Your password must consist of atleast 3 characters",
+    },
+    "email": {
+      required: "<br/> You have not entered an email address!",
+      email: "<br/> Please use a valid email address!",
+    },
+    
+  }
+});
+  $('#form input').bind('keyup blur click', function () { // fires on every keyup & blur
+      if ($('#form').validate().checkForm()) {                   // checks form for validity
+        $('#submit').removeClass('button_disabled').prop('disabled', false); // enables button
+      } else {
+        $('#submit').addClass('button_disabled').prop('disabled', true);   // disables button
+      }
+    });
+
+});
+  
+  </script>
+  </body>
+</html>
